@@ -8,7 +8,7 @@ const FeatureList = [
     // Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Give me a star at here <a target="_blank" rel="noopener noreferrer" href="https://github.com/Messiahhh/blog">GitHub</a>
+        Give me a star at here <a target="_blank" rel="noopener noreferrer" href="https://github.com/austin99c/blog">GitHub</a>
       </>
     ), 
   },
@@ -17,7 +17,7 @@ const FeatureList = [
     // Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        now working at bytedance
+          A Java development engineer
       </>
     ),
   },
@@ -26,7 +26,7 @@ const FeatureList = [
     // Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Wechat: a616348105
+        Wechat: 373785292
       </>
     ),
   },

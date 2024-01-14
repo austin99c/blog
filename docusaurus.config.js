@@ -64,7 +64,7 @@ const config = {
       },
       announcementBar: {
         id: 'support_us',
-        content: '⭐️ 如果这个网站能帮助到你，欢迎给一个star支持作者  <a target="_blank" rel="noopener noreferrer" href="https://github.com/Messiahhh/blog">GitHub</a>',
+        content: '⭐️ 如果这个网站能帮助到你，欢迎给一个star支持作者  <a target="_blank" rel="noopener noreferrer" href="https://github.com/austin99c/blog">GitHub</a>',
         backgroundColor: '#fafbfc',
         textColor: '#091E42',
         isCloseable: true,
@@ -85,7 +85,7 @@ const config = {
           },
           {to: 'blog/面经', label: '面经', position: 'right'},
           {
-            href: 'https://github.com/messiahhh/blog',
+            href: 'https://github.com/austin99c/blog',
             label: 'GitHub',
             position: 'right',
           },
