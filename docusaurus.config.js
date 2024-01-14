@@ -70,7 +70,7 @@ const config = {
         isCloseable: true,
       },
       navbar: {
-        title: 'loner的博客',
+        title: 'Loner的博客',
         hideOnScroll: true,
         items: [
           {
