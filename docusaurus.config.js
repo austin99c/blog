@@ -9,7 +9,7 @@ const config = {
   title: '山雨欲来',
   tagline: '✨人类所有真实的快乐，一定是恒久的努力✨',
   url: 'https://messiahhh.github.io/',
-  baseUrl: '/blog/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
