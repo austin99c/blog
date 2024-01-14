@@ -13,7 +13,7 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'messiahhh', // Usually your GitHub org/user name.
+  organizationName: 'austin99c', // Usually your GitHub org/user name.
   projectName: 'blog', // Usually your repo name.
   deploymentBranch: 'gh-pages',
   plugins: ['@docusaurus/theme-live-codeblock'],
