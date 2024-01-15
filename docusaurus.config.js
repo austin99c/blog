@@ -18,8 +18,8 @@ const config = {
   deploymentBranch: 'gh-pages',
   plugins: ['@docusaurus/theme-live-codeblock'],
   i18n: {
-    defaultLocale: 'zh-Hans',
-    locales: ['zh-Hans'],
+    defaultLocale: 'zh-cn',
+    locales: ['zh-cn'],
   },
   headTags: [
     {
@@ -39,13 +39,13 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -71,32 +71,42 @@ const config = {
       },
       navbar: {
         title: 'Loner的博客',
+        logo: {
+          src: "img/pen.svg",
+          href: "/",
+        },
         hideOnScroll: true,
         items: [
+          {
+            type: 'doc',
+            docId: 'HTML',
+            position: 'right',
+            label: '👨🏻‍💻技术',
+          },
+          {to: 'blog/面经', label: '📗面经', position: 'right'},
           {
             type: 'search',
             position: 'right',
           },
           {
-            type: 'doc',
-            docId: 'HTML',
-            position: 'right',
-            label: '正文',
-          },
-          {to: 'blog/面经', label: '面经', position: 'right'},
-          {
             href: 'https://github.com/austin99c/blog',
-            label: 'GitHub',
+            // label: 'GitHub',
             position: 'right',
+            className: "header-github-link",
+            "aria-label": "GitHub profile",
           },
         ],
-      }, 
-      prism: { 
+      },
+      footer: {
+        style: 'light',
+        copyright: `Copyright © ${new Date().getFullYear()} Loner's Project, Inc.`,
+      },
+      prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
         defaultLanguage: 'javascript',
         additionalLanguages: ['rust'],
-      }, 
+      },
       colorMode: {
         respectPrefersColorScheme: true
       },
