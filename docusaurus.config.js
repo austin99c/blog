@@ -85,15 +85,15 @@ const config = {
           },
           {to: 'blog/面经', label: '📗面经', position: 'right'},
           {
-            type: 'search',
-            position: 'right',
-          },
-          {
             href: 'https://github.com/austin99c/blog',
             // label: 'GitHub',
             position: 'right',
             className: "header-github-link",
             "aria-label": "GitHub profile",
+          },
+          {
+            type: 'search',
+            position: 'right',
           },
         ],
       },
