@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
     title: '山雨欲来',
     tagline: '✨人类所有真实的快乐，一定是恒久的努力✨',
-    url: 'https://messiahhh.github.io/',
+    url: 'https://doc.austin666.com/',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
@@ -16,10 +16,24 @@ const config = {
     organizationName: 'austin99c', // Usually your GitHub org/user name.
     projectName: 'blog', // Usually your repo name.
     deploymentBranch: 'gh-pages',
-    plugins: ['@docusaurus/theme-live-codeblock'],
+    plugins: [
+        '@docusaurus/theme-live-codeblock',
+        [
+            '@docusaurus/plugin-content-blog',
+            {
+                id: 'second-blog',
+                blogSidebarTitle: '近期杂谈',
+                blogTitle: '技术杂谈',
+                routeBasePath: 'chatter',
+                path: './chatter',
+                blogSidebarCount: 5,
+                postsPerPage: 5
+            },
+        ]
+    ],
     i18n: {
-        defaultLocale: 'zh-cn',
-        locales: ['zh-cn'],
+        defaultLocale: 'zh-Hans',
+        locales: ['zh-Hans'],
     },
     headTags: [
         {
@@ -42,7 +56,11 @@ const config = {
                     // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
                 },
                 blog: {
+                    blogTitle: '博客',
+                    blogSidebarTitle: '近期博文',
+                    blogSidebarCount: 5,
                     showReadingTime: true,
+                    postsPerPage: 5
                     // Please change this to your repo.
                     // editUrl:
                     //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
@@ -79,7 +97,7 @@ const config = {
                     {
                         type: 'dropdown',
                         position: 'right',
-                        label: '👨🏻‍💻技术',
+                        label: '👨🏻‍💻技术文章',
                         items: [
                             {
                                 type: 'doc',
@@ -91,15 +109,15 @@ const config = {
                                 docId: 'Git/如何忽略.idea文件',
                                 label: 'Git',
                             },
+                            {
+                                type: 'doc',
+                                docId: 'Spring/什么是IOC',
+                                label: 'Spring'
+                            },
                         ]
                     },
-                    {
-                      type: 'doc',
-                      position: 'right',
-                      docId: 'Frame/index',
-                      label: '框架'
-                    },
-                    {to: 'blog/面经', label: '📗面经', position: 'right'},
+                    {to: 'blog/技术博客', label: '📗技术博客', position: 'right'},
+                    {to: 'chatter/文章1', label: '📗技术杂谈', position: 'right'},
                     {
                         href: 'https://github.com/austin99c/blog',
                         // label: 'GitHub',

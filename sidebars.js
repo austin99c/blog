@@ -15,7 +15,7 @@
 const sidebars = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
   tutorialSidebar: [
-    "HTML",
+    "介绍",
     {
       type: 'category',
       label: 'Git',
@@ -30,7 +30,14 @@ const sidebars = {
         'Vue/模板语法',
         'Vue/数据绑定',
       ],
-    }
+    },
+    {
+      type: 'category',
+      label: 'Spring',
+      items: [
+        'Spring/什么是IOC'
+      ],
+    },
   ]
 };
 

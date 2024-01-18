@@ -29,7 +29,7 @@ export default function NotFound() {
                 </Translate>
               </h1>
               <p>
-                <a href="/blog">回到首页</a>
+                <a href="/">回到首页</a>
               </p>
             </div>
           </div>
