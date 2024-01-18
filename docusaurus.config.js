@@ -69,7 +69,7 @@ const config = {
                 isCloseable: true,
             },
             navbar: {
-                title: '编程技术体系',
+                title: '技术之路',
                 logo: {
                     src: "img/pen.svg",
                     href: "/",
