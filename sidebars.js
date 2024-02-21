@@ -38,6 +38,13 @@ const sidebars = {
         'Spring/什么是IOC'
       ],
     },
+    {
+      type: 'category',
+      label: 'MySQL',
+      items: [
+        'MySQL/数据库驱动是如何加载的'
+      ],
+    },
   ]
 };
 

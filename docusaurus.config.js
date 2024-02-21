@@ -86,6 +86,10 @@ const config = {
                 textColor: '#091E42',
                 isCloseable: true,
             },
+            tableOfContents: {
+                minHeadingLevel: 2,
+                maxHeadingLevel: 5,
+            },
             navbar: {
                 title: '技术之路',
                 logo: {
@@ -114,9 +118,14 @@ const config = {
                                 docId: 'Spring/什么是IOC',
                                 label: 'Spring'
                             },
+                            {
+                                type: 'doc',
+                                docId: 'MySQL/数据库驱动是如何加载的',
+                                label: 'MySQL'
+                            },
                         ]
                     },
-                    {to: 'blog/技术博客', label: '📗技术博客', position: 'right'},
+                    {to: 'blog/npm全局安装的包文件所在的位置', label: '📗技术博客', position: 'right'},
                     {to: 'chatter/文章1', label: '📗技术杂谈', position: 'right'},
                     {
                         href: 'https://github.com/austin99c/blog',
@@ -139,7 +148,7 @@ const config = {
                 theme: lightCodeTheme,
                 darkTheme: darkCodeTheme,
                 defaultLanguage: 'javascript',
-                additionalLanguages: ['rust'],
+                additionalLanguages: ['rust','java'],
             },
             colorMode: {
                 respectPrefersColorScheme: true
